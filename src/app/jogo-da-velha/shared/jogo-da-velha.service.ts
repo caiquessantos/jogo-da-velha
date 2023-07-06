@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { AppModule } from 'src/app/app.module';
 
-@Injectable({ providedIn: 'any' })
+@Injectable({ providedIn: 'root' })
 export class JogoDaVelhaService {
   private jogador: number;
   private tela_inicial: boolean;
