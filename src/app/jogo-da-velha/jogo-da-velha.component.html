@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TICTACTOE</title>
+  </head>
+  <body>
+    <h1>TICTACTOE</h1>
+    <div class="principal" *ngIf="mostrarInicio === true">
+      <a href="#" class="botao" (click)="iniciarEscolha()">BEGIN</a>
+    </div>
+    <div *ngIf="mostrarEscolha === true">
+      <a
+        href="#"
+        class="botao"
+        (click)="umJogador()"
+        (click)="terminarEscolha()"
+        >1 PLAYER</a
+      >
+      <a
+        href="#"
+        class="botao"
+        (click)="doisJogadores()"
+        (click)="terminarEscolha()"
+        >2 PLAYERS</a
+      >
+    </div>
+    <div *ngIf="mostrarPronto === true">
+      <a href="#" class="botao" (click)="iniciarJogo()">READY?</a>
+    </div>
+    <div *ngIf="mostrarTabuleiro === true">
+      <ul>
+        <li
+          class="borda_baixo borda_direita"
+          [ngClass]="{
+            imgx: mostrarX(0, 0),
+            imgo: mostrarO(0, 0),
+            vitoria: mostrarVitoria(0, 0)
+          }"
+          (click)="jogar(0, 0)"
+        ></li>
+        <li
+          class="borda_baixo borda_direita"
+          [ngClass]="{
+            imgx: mostrarX(0, 1),
+            imgo: mostrarO(0, 1),
+            vitoria: mostrarVitoria(0, 1)
+          }"
+          (click)="jogar(0, 1)"
+        ></li>
+        <li
+          class="borda_baixo"
+          [ngClass]="{
+            imgx: mostrarX(0, 2),
+            imgo: mostrarO(0, 2),
+            vitoria: mostrarVitoria(0, 2)
+          }"
+          (click)="jogar(0, 2)"
+        ></li>
+        <li
+          class="borda_baixo borda_direita"
+          [ngClass]="{
+            imgx: mostrarX(1, 0),
+            imgo: mostrarO(1, 0),
+            vitoria: mostrarVitoria(1, 0)
+          }"
+          (click)="jogar(1, 0)"
+        ></li>
+        <li
+          class="borda_baixo borda_direita"
+          [ngClass]="{
+            imgx: mostrarX(1, 1),
+            imgo: mostrarO(1, 1),
+            vitoria: mostrarVitoria(1, 1)
+          }"
+          (click)="jogar(1, 1)"
+        ></li>
+        <li
+          class="borda_baixo"
+          [ngClass]="{
+            imgx: mostrarX(1, 2),
+            imgo: mostrarO(1, 2),
+            vitoria: mostrarVitoria(1, 2)
+          }"
+          (click)="jogar(1, 2)"
+        ></li>
+        <li
+          class="borda_direita"
+          [ngClass]="{
+            imgx: mostrarX(2, 0),
+            imgo: mostrarO(2, 0),
+            vitoria: mostrarVitoria(2, 0)
+          }"
+          (click)="jogar(2, 0)"
+        ></li>
+        <li
+          class="borda_direita"
+          [ngClass]="{
+            imgx: mostrarX(2, 1),
+            imgo: mostrarO(2, 1),
+            vitoria: mostrarVitoria(2, 1)
+          }"
+          (click)="jogar(2, 1)"
+        ></li>
+        <li
+          [ngClass]="{
+            imgx: mostrarX(2, 2),
+            imgo: mostrarO(2, 2),
+            vitoria: mostrarVitoria(2, 2)
+          }"
+          (click)="jogar(2, 2)"
+        ></li>
+      </ul>
+    </div>
+    <div *ngIf="mostrarfinal == true">
+      <span>
+        <p *ngIf="jogador == 2">PLAYER X WINS</p>
+        <p *ngIf="jogador == 1">PLAYER O WINS</p>
+        <p *ngIf="jogador == 0">DRAW</p>
+        <p>MOVES: {{ numdejogadas }}.</p>
+        <br />
+        <a href="#" class="botao" (click)="jogardenovo()"> PLAY AGAIN</a>
+      </span>
+    </div>
+  </body>
+</html>

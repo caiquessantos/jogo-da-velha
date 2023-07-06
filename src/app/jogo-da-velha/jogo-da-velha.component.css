@@ -1,0 +1,75 @@
+body {
+  font-family: "Games", sans-serif;
+}
+h1 {
+  color: rgb(52, 109, 52);
+  text-decoration: underline;
+  font-size: 4em;
+  text-shadow: 2px 2px 2px #000000;
+}
+div.principal {
+  margin-top: 100px;
+}
+p {
+  font-size: 3em;
+}
+a.botao {
+  margin-top: 100px;
+  text-decoration: none;
+  color: rgb(52, 109, 52);
+  font-size: 1.5em;
+  padding: 30px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: rgba(132, 201, 132, 0.596);
+  background-color: rgba(202, 243, 202, 0.664);
+}
+
+a:hover,
+a:active {
+  background-color: rgba(202, 243, 202, 0.904);
+  font-size: 2em;
+  transition: 300ms;
+  padding: 40px;
+  box-shadow: 5px 5px 5px rgb(74, 158, 74);
+  color: rgb(52, 109, 52);
+}
+
+ul li {
+  list-style: none;
+  width: 130px;
+  height: 130px;
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+ul {
+  box-shadow: 3px 3px 3px 3px #000000;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.borda_baixo {
+  border-bottom: 3px solid #000000;
+}
+
+.borda_direita {
+  border-right: 3px solid #000000;
+}
+
+.imgx {
+  background-image: url("/assets/imagens/x.png");
+}
+
+.imgo {
+  background-image: url("/assets/imagens/o.png");
+}
+
+.vitoria {
+  background-color: lightgreen;
+}
