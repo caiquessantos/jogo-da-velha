@@ -7,6 +7,7 @@ h1 {
   font-size: 4em;
   text-shadow: 2px 2px 2px #000000;
 }
+
 div.principal {
   margin-top: 100px;
 }
@@ -18,7 +19,7 @@ a.botao {
   text-decoration: none;
   color: rgb(52, 109, 52);
   font-size: 1.5em;
-  padding: 30px;
+  padding: 10px;
   border-style: solid;
   border-radius: 3px;
   border-color: rgba(132, 201, 132, 0.596);
@@ -37,8 +38,8 @@ a:active {
 
 ul li {
   list-style: none;
-  width: 130px;
-  height: 130px;
+  width: 80px;
+  height: 80px;
   float: left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -48,8 +49,8 @@ ul li {
 ul {
   box-shadow: 3px 3px 3px 3px #000000;
   margin: auto;
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   text-align: center;
   background-color: antiquewhite;
 }
