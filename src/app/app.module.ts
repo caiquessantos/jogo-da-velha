@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
-import { JogoDaVelhaModule, JogoDaVelhaService } from './jogo-da-velha';
+import { JogoDaVelhaModule } from './jogo-da-velha';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, JogoDaVelhaModule],
-  providers: [JogoDaVelhaService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
