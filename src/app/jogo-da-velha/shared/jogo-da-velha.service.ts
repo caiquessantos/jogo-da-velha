@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
+import { AppModule } from 'src/app/app.module';
 
-@Injectable({ providedIn: 'root' })
+@Injectable({ providedIn: 'any' })
 export class JogoDaVelhaService {
   private jogador: number;
   private tela_inicial: boolean;
@@ -97,11 +98,8 @@ export class JogoDaVelhaService {
    * Inicia a tela de escolhas.
    */
   iniciarEscolha(): void {
-    this.iniciar();
     this.tela_inicial = false;
     this.tela_de_escolha = true;
-    this.tela_de_jogo = false;
-    this.tela_final = false;
   }
 
   /**
@@ -339,6 +337,9 @@ export class JogoDaVelhaService {
    */
   newGame(): void {
     this.iniciar();
+    this.tela_inicial = false;
+    this.tela_de_jogo = true;
+    this.tela_final = false;
   }
 
   /**
