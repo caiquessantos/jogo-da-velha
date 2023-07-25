@@ -4,8 +4,6 @@ import { Injectable } from '@angular/core';
 export class JogoDaVelhaService {
   private jogador: number;
   private tela_inicial: boolean;
-  private tela_de_escolha: boolean;
-  private tela_de_pronto: boolean;
   private tela_de_jogo: boolean;
   private tela_final: boolean;
   private movimentos: number;
@@ -25,7 +23,6 @@ export class JogoDaVelhaService {
    */
   iniciar(): void {
     this.tela_inicial = true;
-    this.tela_de_escolha = false;
     this.tela_de_jogo = false;
     this.tela_final = false;
     this.movimentos = 0;
@@ -49,20 +46,6 @@ export class JogoDaVelhaService {
    */
   get mostrarInicio(): boolean {
     return this.tela_inicial;
-  }
-
-  /**
-   * Mostra o tabuleiro.
-   */
-  get mostrarPronto(): boolean {
-    return this.tela_de_pronto;
-  }
-
-  /**
-   * Mostra a tela de escolha dos jogadores.
-   */
-  get mostrarEscolha(): boolean {
-    return this.tela_de_escolha;
   }
 
   /**
@@ -94,37 +77,10 @@ export class JogoDaVelhaService {
   }
 
   /**
-   * Inicia a tela de escolhas.
-   */
-  iniciarEscolha(): void {
-    this.tela_inicial = false;
-    this.tela_de_escolha = true;
-  }
-
-  /**
-   * Transforma o número de jogadores em 1.
-   */
-  get umJogador(): number {
-    return (this.escolha = 1);
-  }
-
-  /**
-   * Transforma o número de jogadores em 2.
-   */
-  get doisJogadores(): number {
-    return (this.escolha = 2);
-  }
-
-  terminarEscolha(): void {
-    this.tela_de_escolha = false;
-    this.tela_de_pronto = true;
-  }
-
-  /**
    * Inicia o jogo.
    */
   iniciarJogo(): void {
-    this.tela_de_pronto = false;
+    this.tela_inicial = false;
     this.tela_de_jogo = true;
   }
 

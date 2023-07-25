@@ -16,32 +16,14 @@ export class JogoDaVelhaComponent implements OnInit {
   get mostrarInicio(): boolean {
     return this.jogodavelhaService.mostrarInicio;
   }
-  get mostrarEscolha(): boolean {
-    return this.jogodavelhaService.mostrarEscolha;
-  }
   get mostrarTabuleiro(): boolean {
     return this.jogodavelhaService.mostrarTabuleiro;
   }
   get mostrarfinal(): boolean {
     return this.jogodavelhaService.mostrarfinal;
   }
-  get mostrarPronto(): boolean {
-    return this.jogodavelhaService.mostrarPronto;
-  }
   iniciarJogo(): void {
     this.jogodavelhaService.iniciarJogo();
-  }
-  iniciarEscolha(): void {
-    this.jogodavelhaService.iniciarEscolha();
-  }
-  terminarEscolha(): void {
-    this.jogodavelhaService.terminarEscolha();
-  }
-  umJogador(): void {
-    this.jogodavelhaService.umJogador;
-  }
-  doisJogadores(): void {
-    this.jogodavelhaService.doisJogadores;
   }
   jogar(x: number, y: number): void {
     this.jogodavelhaService.jogar(x, y);

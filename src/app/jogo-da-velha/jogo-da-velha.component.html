@@ -8,27 +8,9 @@
   <body>
     <h1>TICTACTOE</h1>
     <div class="principal" *ngIf="mostrarInicio === true">
-      <a href="#" class="botao" (click)="iniciarEscolha()">BEGIN</a>
+      <a href="#" class="botao" (click)="iniciarJogo()">BEGIN</a>
     </div>
-    <div *ngIf="mostrarEscolha === true">
-      <a
-        href="#"
-        class="botao"
-        (click)="umJogador()"
-        (click)="terminarEscolha()"
-        >1 PLAYER</a
-      >
-      <a
-        href="#"
-        class="botao"
-        (click)="doisJogadores()"
-        (click)="terminarEscolha()"
-        >2 PLAYERS</a
-      >
-    </div>
-    <div *ngIf="mostrarPronto === true">
-      <a href="#" class="botao" (click)="iniciarJogo()">READY?</a>
-    </div>
+    <div *ngIf="mostrarTabuleiro === true"></div>
     <div *ngIf="mostrarTabuleiro === true" class="tabela">
       <ul>
         <li

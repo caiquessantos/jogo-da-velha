@@ -1,32 +1,43 @@
-# JogoDaVelha
+# Gerenciador De Tarefas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0.
-Projeto pessoal realizado com objetivo de testar as habilidades e lógica em typescript com angular.
+![Angular.js](https://img.shields.io/badge/angular.js-%23E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-## Development server
+> Status do Projeto: 🚧 Em construção 🚧
+
+#### This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.0.
+
+## Projeto pessoal desenvolvido com o objetivo de testar os conhecimentos com o framework de JavaScript. TO jogo da velha ou jogo do galo ou três em linha é um jogo e/ou passatempo popular. É um jogo de regras extremamente simples, que não traz grandes dificuldades para seus jogadores e é facilmente aprendido. O sistema permite um experiência de jogo jogador vs CPU.
+
+## Task list:
+
+- [x] 1 jogador
+- [ ] 2 jogadores
+
+# 🔨 Funcionalidades do projeto
+
+- `Jogar`: Simula um jogo da velha contra uma inteligência artificial desenvolvida para esse.
+
+## Deploy da Aplicação com Vercel ✔️
+
+> https://jogo-da-velha-lovat-one.vercel.app/?vercelToolbarCode=2yjTXHllrrNhaSf
+
+## Como rodar o projeto:
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
+## Rodando os testes unitários:
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## ✔️Técnicas e tecnologias usadas
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-## Tecnologias usadas
-
-HTML5, CSS3, TypeScript, Angularcli
+- 'HTML5'
+- 'CSS3'
+- 'Angular'
+- 'TypeScript'
+- 'JavaScript'
+- 'Paradigmas de POO'
